@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title" class="container">
+        <h3>Questão 3</h3>
+        <p>Calculadora simples com interface</p>
+        <p>
+            3. Observe o layout do seu teclado numérico e crie uma calculadora seguindo um layout
+            similar. Para facilitar sua calculadora aceitará apenas números inteiros positivos
+            (Dica: Use tabelas para realizar o merge das células e não é necessário fazer a
+            validação dos números)
+            <br>a. Ao selecionar os botões, o valor selecionado, devem aparecer em um input text
+            que mostra a expressão formada, mas cujo valor da expressão não é possível
+            alterar (Dica: use readonly)
+            <br>b. [Opcionalmente] Ao clicar no botão enter você computará e exibirá o resultado
+            da expressão em outro campo html.
+            <br>c. [Opcionalmente] Crie um botão que mostrará o histórico no console ou em um
+            alert, das expressões e dos valores computados.
+        </p>
+    </div>
+    
+    <div class="container">
+        <div id="calculator">
+            <div id="expression">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+
+            <div id="buttons">
+                <button class="button" data-delete>Del</button>
+                <button class="button" data-all-clear>AC</button>
+                <div>
+                    <button class="button" data-number>7</button>
+                    <button class="button" data-number>8</button>
+                    <button class="button" data-number>9</button>
+                    <button class="button" data-operation>/</button>
+                </div>
+                <div>
+                    <button class="button" data-number>4</button>
+                    <button class="button" data-number>5</button>
+                    <button class="button" data-number>6</button>
+                    <button class="button" data-operation>*</button>
+                </div>
+                <div>
+                    <button class="button" data-number>1</button>
+                    <button class="button" data-number>2</button>
+                    <button class="button" data-number>3</button>
+                    <button class="button" data-operation>-</button>
+                </div>
+                <div>
+                    <button class="button" data-number>0</button>
+                    <button class="button" data-equals>=</button>
+                    <button class="button" data-operation>+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="index.js"></script>
+
+</html>
